@@ -1,0 +1,79 @@
+<div class="MainContainer">
+    <mat-card class="logo-img-main">
+      <mat-card-content class="logo-content">
+        <img src="../../../assets/logo.png" alt="" class="logo">
+        <h3 class="heading">Online Book Shopping</h3>
+      </mat-card-content>
+    </mat-card> 
+  
+  <div class="login-signup-contanier">
+      <mat-tab-group animationDuration="0ms">
+        <mat-tab label="LOGIN">
+          <div class="sub-container">
+            <form class="formcontainer" [formGroup]="Loginform">
+              
+                <mat-form-field appearance="outline">
+                  <mat-label>Email id</mat-label>
+                  <input matInput placeholder="" type="email" formControlName="email">              
+                </mat-form-field>
+              
+                <mat-form-field appearance="outline">
+                  <mat-label>Password</mat-label>
+                  <input matInput placeholder="" type="password" formControlName="password">
+                  <mat-error>enter valid password</mat-error>
+                </mat-form-field>
+                <div class="Forgotpassword">Forgot Password?</div>
+              
+  
+              <button mat-raised-button color="primary" (click)="onLogin()">Login</button>
+  
+              <div>
+                <img src="../../../assets/or.PNG" alt="OR" style="padding: 17px 0px 32px 0px;">
+              </div>
+  
+              <div class="facebook-google-button">
+                <button class="facebook-button">Facebook</button>
+                <button class="google-button">Google</button>
+              </div>
+            </form>
+          </div>
+        </mat-tab>
+  
+        <mat-tab label="SIGNUP">
+          <div class="sub-container">
+            <form class="formcontainer" [formGroup]="formcontainer">
+              
+                <mat-form-field appearance="outline">
+                  <mat-label>First Name</mat-label>
+                  <input matInput placeholder="" formControlName="firstname">
+                  <mat-error>enter valid Name</mat-error>
+                </mat-form-field>
+
+                <mat-form-field appearance="outline">
+                  <mat-label>Last Name</mat-label>
+                  <input matInput placeholder="" formControlName="lastname">
+                  <mat-error>enter valid Mobile Number</mat-error>
+                </mat-form-field>
+              
+                <mat-form-field appearance="outline">
+                  <mat-label>Email Id</mat-label>
+                  <input matInput placeholder="" type="email" formControlName="email1">
+                  <mat-error>enter valid email</mat-error>
+                </mat-form-field>
+               
+              
+                <mat-form-field appearance="outline">
+                <mat-label>Password</mat-label>
+                <input matInput [type]="hide ? 'password' : 'text'" formControlName="password1">
+                 <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+                 <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                 </button>           
+                <mat-error>enter valid Password</mat-error>
+                </mat-form-field>
+               
+              <button mat-raised-button color="primary" (click)="onSignup()">Signup</button>
+            </form>
+          </div>
+        </mat-tab>
+      </mat-tab-group>
+  </div>
