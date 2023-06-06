@@ -1,0 +1,187 @@
+.MainContainer {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    background-color: #878787;
+    justify-content: center;
+  }
+  
+.logo-img-main {
+    width: 624px;
+    height: 393px;
+    /* UI Properties */
+    background: #f5f5f5 0% 0% no-repeat padding-box;
+    border-radius: 21px;
+    opacity: 1;
+    position: absolute;
+    
+  }
+  
+  .logo-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+    justify-content: center;
+    padding-left: 50px;
+  
+  }
+  
+.logo {
+    background: transparent 0% 0% no-repeat padding-box;
+    opacity: 1;
+    margin-top: 30px;
+    width: 250px;
+    height: 260px;
+}
+.Forgotpassword{
+ width: 81px;
+ height: 13px;
+ margin-top: 0px;
+ margin-bottom: 20px;
+/* UI Properties */
+text-align: left;
+font: normal normal normal 10px/13px Roboto;
+letter-spacing: 0px;
+color: #9D9D9D;
+opacity: 1;
+}
+
+.heading {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500; /* Medium */
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0px;
+    color: #0a0102;
+    text-transform: uppercase;
+    opacity: 1;
+    padding-left: 20px;
+    
+  }
+  
+  
+.login-signup-contanier {
+  height: 425px;
+    /* UI Properties */
+    background: #ffffff 0% 0% no-repeat padding-box;
+    box-shadow: 0px 5px 15px #00000029;
+    border: 1px solid #e4e4e4;
+    border-radius: 6px;
+    opacity: 1;
+    position: relative;
+    z-index: 1;
+    margin-left: 420px;
+    padding: 28px 52px 8px 52px;
+    
+  }
+  
+::ng-deep.mat-mdc-form-field-infix {
+    min-height: 45px;
+}
+  
+.mat-mdc-form-field {
+    --mat-mdc-form-field-floating-label-scale: 0.75;
+    display: inline-flex;
+    flex-direction: column; 
+    text-align: left;
+   
+  }
+  
+.sub-container {
+    padding-top: 13px;
+}
+  
+.formcontainer {
+     display: flex;
+    flex-direction: column;
+    height: 410px;
+}
+  
+::ng-deep .mat-mdc-form-field {
+    width: 100%;
+}
+  
+  // Button
+::ng-deep.mat-mdc-raised-button.mat-primary {
+    background: #a03037 0% 0% no-repeat padding-box !important;
+}
+  
+::ng-deep.mat-mdc-button.mat-mdc-button-base,
+  .mat-mdc-raised-button.mat-mdc-button-base,
+  .mat-mdc-unelevated-button.mat-mdc-button-base,
+  .mat-mdc-outlined-button.mat-mdc-button-base {
+    border-radius: 3px !important;
+    height: 37px !important;
+}
+  
+::ng-deep.mdc-button {
+    font-family: "Roboto", sans-serif !important;
+    font-weight: 300 !important;
+    font-size: 15px !important;
+    line-height: 20px !important;
+    letter-spacing: 0px !important;
+}
+  
+.facebook-google-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: -13px;
+}
+   
+.facebook-button {
+    width: 126px;
+    height: 37px;
+    /* UI Properties */
+    background: #4266b2 0% 0% no-repeat padding-box;
+    border-radius: 3px;
+    border: none;
+    opacity: 1;
+  
+    color: #ffffff;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: 0px;
+    cursor: pointer;
+  }
+
+.google-button {
+    width: 119px;
+    height: 37px;
+    /* UI Properties */
+    background: #f5f5f5 0% 0% no-repeat padding-box;
+    border: 1.5px solid #e4e4e4;
+    border-radius: 3px;
+    opacity: 1;
+
+    color: #0a0102;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: 0px;
+    cursor: pointer;
+  }
+  
+  ::ng-deep.mat-mdc-text-field-wrapper.mdc-text-field--outlined
+    .mat-mdc-form-field-infix {
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+    
+  }
+  
+// .allPlaceHolder{
+//   width: 45px;
+//   height: 13px;
+//   /* UI Properties */
+//   text-align: left;
+//   font: normal normal normal 10px/13px Roboto;
+//   letter-spacing: 0px;
+//   color: #0A0102;
+//   text-transform: capitalize;
+//   opacity: 1;
+//   }
