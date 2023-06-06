@@ -1,0 +1,45 @@
+<div class="whole-container">
+    <div class="header">
+        
+            <div class="ico-1">
+                <img src="../../../assets/education.svg">
+            </div>
+            <span class="text-1">Bookstore</span>
+        
+            <input type="search" placeholder="Search...." (keyup)="searchData($event)">
+        
+            <div class="ico-2">
+                <img src="../../../assets/person_outline_white_24dp.svg" [matMenuTriggerFor]="beforeMenu">
+                <mat-menu #beforeMenu="matMenu" xPosition="before">
+                    <span class="text-4">Hello ,</span>
+                    <div class="item-class">
+                        <img src="../../../assets/person_outline_black_18dp.svg">
+                        <span>Profile</span>
+                    </div>
+                    <div class="item-class">
+                        <img src="../../../assets/work_outline_black_18dp.svg">
+                        <span>My Orders</span>
+                    </div>
+                    <div class="item-class" routerLink="/dashboard/wishlist">
+                        <img src="../../../assets/favorite_border_black_18dp.svg" >
+                        <span routerLink="wishlist" >Whishlist</span>
+                    </div>
+                    <div class="item-class">
+                        <button class="log-out-button">Log Out</button>
+                    </div>
+                </mat-menu>
+                
+                <span class="text-2">Name</span>
+            </div>
+            <div class="ico-3" routerLink="/dashboard/cart">
+                <mat-icon  matBadgeSize="small" >local_grocery_store</mat-icon>
+                <!-- <span ><img src="../../../assets/supermarket (1).svg"  height="20px" width="20px"></span> -->
+                <span class="text-3" >Cart</span>
+            </div>
+        
+    </div>
+    <router-outlet></router-outlet>
+    <div class="footer">
+        <div class="footer-text">Copyright 2020,Bookstore Private Limited.All rights are reserved.</div>
+    </div>
+</div>

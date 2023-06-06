@@ -1,0 +1,30 @@
+<div class="main-container">
+    <div class="container-1">
+        <span class="text-1" routerLink="/dashboard">Home </span>
+        <span>/</span>
+        <span class="text-2"> My Whishlist</span>
+    </div>
+    <div class="container-2">
+        <div class="header-1">
+            <span class="header-text">My Wishlist ({{wishlist.length}})</span>
+        </div>
+        <div class="book-show-container" *ngFor="let book of wishlist">
+            <div class="book-and-button">
+                <div class="book-details">
+                    <img src="../../../assets/Image 11.png" height="85px" width="65px">
+                    <div class="book-info">
+                        <span class="book-name">{{book.bookName}}</span>
+                        <span class="author-name">{{book.author}}</span>
+                        <div class="price-info">
+                            <span class="discounted-price">Rs.{{book.discountPrice}}</span>
+                            <span class="actual-price">Rs.{{book.price}}</span>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <img src="../../../assets/delete_black_18dp new.svg" (click)="removeFromList(book.productID)">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

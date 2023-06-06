@@ -1,0 +1,62 @@
+<div class="main-container">
+    <div class="container-1">
+        <span class="text-1" routerLink="/dashboard">Home </span>
+        <span>/</span>
+        <span class="text-2"> Book (01)</span>
+    </div>
+    <div class="book-container">
+        <div class="book-front-back">
+            <div class="book-front">
+                <img src="../../../assets/Image 1.png" class="img-size">
+            </div>
+            <div class="book-front">
+                <img src="../../../assets/Image 46.png" class="img-size">
+            </div>
+        </div>
+        <div class="img-with-button">
+            <div class="book-img">
+                <img src="../../../assets/Image 11@2x.png" >
+            </div>
+            <div class="button-class">
+                <div >
+                    <button class="button-1" (click)="addTocart(getBookData._id)">ADD TO CART</button>
+                </div>
+                
+                <button class="button-2" (click)="addTowishlist(getBookData._id)"><img src="../../../assets/favorite_white_18dp.svg"> WHISHLIST</button>
+            </div>
+        </div>
+        <div class="book-details">
+            <span class="book-name">{{getBookData.bookName}}</span>
+            <span class="book-author">{{getBookData.author}}</span>
+            <div class="rating-quantity">
+                <div class="rating">
+                    <span class="rating-number">4.5</span>
+                    <img src="../../../assets/star_white_18dp.svg">
+                </div>
+                <span class="quantity" *ngIf="outofstock">({{getBookData.quantity}})</span>
+                <span class="quantity" *ngIf="!outofstock">OutOfStock</span>
+            </div>
+            <div class="price-class">
+                <span class="discounted-price">Rs.{{getBookData.discountPrice}}</span>
+                <span class="actual-price">Rs.{{getBookData.price}}</span>
+            </div>
+            <mat-divider class="divider-class"></mat-divider>
+            <div class="description-class">
+                <li class="desc-1">Book Details</li>
+                <p class="content-class">{{getBookData.description}}</p>
+            </div>
+            <mat-divider class="divider-class"></mat-divider>
+            <span class="feedback">Customer Feedback</span>
+            <div class="overall-rating-class">
+                <span class="overall-text">Overall rating</span>
+                
+                <div class="comment-input">
+                    <input type="text" placeholder="Write your preview" name="feedback"  >
+                </div>
+                <button class="submitting">Submit</button>
+            </div>
+            
+            
+        </div>
+    </div>
+</div>
